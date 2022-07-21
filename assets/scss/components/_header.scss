@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+
+    &__img{
+        width: 100px;
+    }
+    &__content{
+        h1{
+            font-size: 22px;
+        }
+
+        p{
+            line-height: 22px;
+        }
+    }
+    
+
+
+}

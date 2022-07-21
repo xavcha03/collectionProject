@@ -137,21 +137,5 @@ const collection = [
     
 
 ];
-let listCardsElt = document.querySelector("#cardsList");
-listCardsElt.innerHTML = collection.map(game=>
-    `<article class="cardsList__card">
-            <img class="cardsList__card__img" src="${game.picture}" alt="#">
-            <ul class="cardsList__card__genreList">
-                <li><a href="#">Genre 1</a></li>
-                <li><a href="#">Genre 1</a></li>
-                <li><a href="#">Genre 1</a></li>
-            </ul>
-            <h2 class="cardsList__card__title">Game title</h2>
-            <h3 class="cardsList__card__developper">Developper</h3>
-            <p class="cardsList__card__description">Game description</p>
-        </article>
-    `
-    
-    ).join('');
 
-
+console.log(collection);
