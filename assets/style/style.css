@@ -45,6 +45,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.badgesList {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin: 16px 0; }
+  .badgesList a {
+    display: inline-block;
+    background-color: rgba(23, 25, 43, 0.82);
+    padding: 8px;
+    border-radius: 11px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold; }
+
 .header {
   display: flex; }
   .header__img {
@@ -59,19 +74,11 @@ table {
   flex-wrap: wrap;
   gap: 16px; }
   .cardsList__card {
-    width: 350px;
-    border: 1px solid black;
-    padding: 16px; }
+    width: 350px; }
     .cardsList__card__img {
       width: 100%; }
     .cardsList__card__genreList {
-      display: flex;
-      gap: 9px; }
-      .cardsList__card__genreList a {
-        display: inline-block;
-        background-color: blue;
-        color: white;
-        padding: 8px 16px; }
+      flex-wrap: wrap; }
     .cardsList__card__title {
       font-size: 1.3em;
       font-weight: 700; }

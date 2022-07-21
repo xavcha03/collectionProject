@@ -90,16 +90,26 @@ const collection = [
       "Terraformers is an expansive colony builder and resource management game with roguelike elements. Explore the Red Planet, develop spectacular cities, spread life and terraform the planet with ambitious projects.",
   },
 ];
+
+let selectedGenre = null;
+
 let listCardsElt = document.querySelector("#cardsList");
 listCardsElt.innerHTML = collection
+  .filter((games) =>
+    selectedGenre != null ? games.genre.includes(selectedGenre) : true
+  )
   .map(
     (game) =>
       `<article class="cardsList__card">
     <img class="cardsList__card__img" src="${game.picture}" alt="#" />
-    <ul class="cardsList__card__genreList">
+    <ul class="cardsList__card__genreList badgesList">
         ${game.genre
-          .slice(0, 5)
-          .map((genre) => `<li><a href="#">${genre}</a></li>`)}
+          //.slice(0, 5)
+          .map(
+            (genre) =>
+              `<li class="badgesList__item"><a href="#">${genre}</a></li>`
+          )
+          .join("")}
     </ul>
     <h2 class="cardsList__card__title">${game.title}</h2>
     <div>
@@ -122,3 +132,12 @@ listCardsElt.innerHTML = collection
     `
   )
   .join("");
+
+//Ajout d'un event à chaque genre
+let genresElt = document.querySelectorAll(".cardsList__card__genreList a");
+genresElt.forEach((genre) => {
+  genre.addEventListener("click", function (e) {
+    e.preventDefault();
+    selectedGenre = genre.innerHTML;
+  });
+});

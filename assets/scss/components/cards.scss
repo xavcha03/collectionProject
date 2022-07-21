@@ -1,4 +1,4 @@
-.cardsList{
+.cardsList{  //Conteneur de cards
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
@@ -8,43 +8,32 @@
 
 
 
-    &__card{
+    &__card{    //Une card
         width: 350px;
-        border:1px solid black;
-        padding: 16px;
 
 
 
-        &__img{
+
+        &__img{ //L'image en haut de la card
             width: 100%;
         }
 
-        &__genreList{
-            display: flex;
-
-            gap:9px;
-
-            a{
-                display: inline-block;
-                background-color: blue;
-                color:white;
-                padding: 8px 16px;
-            }
-
+        &__genreList{   //Zone dans la quelle se trouvent les badges de genres
+            flex-wrap: wrap;
 
         }
 
-        &__title{
+        &__title{   //Titre principal de la card
             font-size: 1.3em;
             font-weight: 700;
         }
 
-        &__developper{
+        &__developper{  //nom du développeur
             color:gray;
 
         }
 
-        &__p{
+        &__p{   //Description du jeu
             line-height: 1.2em;
         }
     }
