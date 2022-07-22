@@ -1,4 +1,7 @@
-const collection = [
+/**
+ * Collection de jeux vidéos
+ */
+const COLLECTION = [
   {
     title: "Halo",
     developer: "Ensemble studio",
@@ -91,53 +94,71 @@ const collection = [
   },
 ];
 
+//Variable de tri. Si elle est null, aucun tri n'est fait.
 let selectedGenre = null;
 
-let listCardsElt = document.querySelector("#cardsList");
-listCardsElt.innerHTML = collection
-  .filter((games) =>
-    selectedGenre != null ? games.genre.includes(selectedGenre) : true
-  )
-  .map(
-    (game) =>
-      `<article class="cardsList__card">
-    <img class="cardsList__card__img" src="${game.picture}" alt="#" />
-    <ul class="cardsList__card__genreList badgesList">
-        ${game.genre
-          //.slice(0, 5)
-          .map(
-            (genre) =>
-              `<li class="badgesList__item"><a href="#">${genre}</a></li>`
-          )
-          .join("")}
-    </ul>
-    <h2 class="cardsList__card__title">${game.title}</h2>
-    <div>
-      <h3 class="cardsList__card__developper">${game.developer}</h3>
-      <time>${game.releaseDate}</time>
-    </div>
-    <p class="cardsList__card__description">${game.description}</p>
-    <nav class="cardsList__card__socialLink">
-      <a href="#">
-        <img src="./assets/img/youtube.svg" alt="youtube link" />
-      </a>
-      <a href="#">
-        <img src="./assets/img/twitter.svg" alt="twitter link" />
-      </a>
-      <a href="#">
-        <img src="./assets/img/steamLogo.svg" alt="steamLogo link" />
-      </a>
-    </nav>
-  </article>
-    `
-  )
-  .join("");
+//Rendu initial
+gameListRender(COLLECTION, selectedGenre);
 
-//Ajout d'un event à chaque genre
-let genresElt = document.querySelectorAll(".cardsList__card__genreList a");
-genresElt.forEach((genre) => {
-  genre.addEventListener("click", function (e) {
-    e.preventDefault();
-    selectedGenre = genre.innerHTML;
+//Affiche la liste des jeux d'une collection en fonction de son genre
+function gameListRender(collection, selectedGenre) {
+  //Sélection de l'élément contenant les cards de jeux
+  let listCardsElt = document.querySelector("#cardsList");
+
+  //Parcours de la liste des jeux
+  listCardsElt.innerHTML = collection
+    //Si selectedGenre est utilisé, on filtre la collection
+    .filter((games) =>
+      selectedGenre != null ? games.genre.includes(selectedGenre) : true
+    )
+    //Parcours de la liste avec affichage
+    .map(
+      (game) =>
+        `
+          <article class="cardsList__card">
+            <img class="cardsList__card__img" src="${game.picture}" alt="#" />
+            <ul class="cardsList__card__genreList badgesList">
+              ${game.genre
+                //.slice(0, 5)    //Possibilité de limiter la quantité de genre de jeu à afficher
+                .map(
+                  (genre) =>
+                    `<li class="badgesList__item"><a href="#">${genre}</a></li>`
+                )
+                .join("")}
+            </ul>
+            <h2 class="cardsList__card__title">${game.title}</h2>
+            <div>
+              <h3 class="cardsList__card__developper">${game.developer}</h3>
+              <time>${game.releaseDate}</time>
+            </div>
+            <p class="cardsList__card__description">${game.description}</p>
+            <nav class="cardsList__card__socialLink">
+              <a href="#">
+                <img src="./assets/img/youtube.svg" alt="youtube link" />
+              </a>
+              <a href="#">
+                <img src="./assets/img/twitter.svg" alt="twitter link" />
+              </a>
+              <a href="#">
+                <img src="./assets/img/steamLogo.svg" alt="steamLogo link" />
+              </a>
+            </nav>
+          </article>
+        `
+    )
+    .join("");
+//Fin de map
+
+
+  //Ajout d'un event à chaque genre
+
+  let genresElt = document.querySelectorAll(".cardsList__card__genreList a"); //Selection du container
+  genresElt.forEach((genre) => {
+    //ajout d'un event sur tous les genres
+    genre.addEventListener("click", function (e) {
+      e.preventDefault(); //Annulation de l'action par defaut
+      selectedGenre = genre.innerHTML; //Récupération du nom du genre
+      gameListRender(COLLECTION, selectedGenre); //Mise à jour du rendu de la liste avec le genre sélectionné
+    });
   });
-});
+}
