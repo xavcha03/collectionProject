@@ -1,5 +1,8 @@
 .header{
     display: flex;
+    align-items: center;
+    gap:40px;
+    padding: 0.5em;
 
     &__img{
         width: 100px;

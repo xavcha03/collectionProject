@@ -2,6 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
+    justify-content: center;
+    
+
+    padding: 0.5em;
     
 
     
@@ -9,9 +13,21 @@
 
 
     &__card{    //Une card
-        width: 350px;
+        
+        border-radius: 65px;
+        overflow: hidden;
+
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        
+
+        background: rgb(55,60,95);
+        background: linear-gradient(147deg, rgba(55,60,95,1) 0%, rgba(113,119,166,1) 45%);
 
 
+        @include media-desktop-only{
+            width: 350px;
+        }
 
 
         &__img{ //L'image en haut de la card
@@ -24,17 +40,37 @@
         }
 
         &__title{   //Titre principal de la card
-            font-size: 1.3em;
+            font-size: 29px;
             font-weight: 700;
         }
 
+        &__content{
+            margin:0.5em;
+        }
+
+        &__titleDescription{
+            display: flex;
+            justify-content: space-between;
+
+            margin-bottom: 1em;
+
+            color: #2FBCEC;
+
+            font-weight: bold;
+            ;
+        }
+
         &__developper{  //nom du développeur
-            color:gray;
+            
 
         }
 
         &__p{   //Description du jeu
             line-height: 1.2em;
+        }
+        &__socialLink{
+            text-align: center;
+            padding: 1em;
         }
     }
 }

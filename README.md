@@ -14,16 +14,18 @@ Theme choisi : Jeux vidéos
 
 ## phase 5 : Possibilité de choisir un seul genre
 
+- Bug de performance à résoudre.
+
 ## Phase 6 : lister les genres (unique) todo
 
-- Création d'une nouvelle liste de genre. Chaque genre n'est repris qu'une seule fois.
-- La liste est afficher en haut des la liste des jeux
-- Ajout de la fonctionnalité de tris sur ces badges
-- Possibilité de reset le choix
+- Création d'une nouvelle liste de genre. Chaque genre n'est repris qu'une seule fois. => ok
+- La liste est afficher en haut des la liste des jeux => ok
+- Ajout de la fonctionnalité de tris sur ces badges => ok
+- Possibilité de reset le choix => ToDo
 
-## Phase 7 : Ajout des liens vers les réseau sociaux
+## Phase 7 : Réalisation du css
 
-## Phase 8 : Réalisation du css complet et
+## Phase # : Ajout des liens vers les réseau sociaux
 
 ## BONUS todo
 

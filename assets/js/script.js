@@ -91,7 +91,7 @@ const COLLECTION = [
     genre: ["VR", "Shooter", "Horror", "FPS", "Sci-fi", "Action"],
     description:
       "Terraformers is an expansive colony builder and resource management game with roguelike elements. Explore the Red Planet, develop spectacular cities, spread life and terraform the planet with ambitious projects.",
-    videoLink: "http:www.youtube.com/frzeljmfnezmlkfjezkm"  
+    videoLink: "http:www.youtube.com/frzeljmfnezmlkfjezkm",
   },
 ];
 
@@ -147,8 +147,9 @@ function gameListRender(collection, selectedGenre) {
                 )
                 .join("")}
             </ul>
+            <section class="cardsList__card__content">
             <h2 class="cardsList__card__title">${game.title}</h2>
-            <div>
+            <div class="cardsList__card__titleDescription">
               <h3 class="cardsList__card__developper">${game.developer}</h3>
               <time>${game.releaseDate}</time>
             </div>
@@ -164,6 +165,7 @@ function gameListRender(collection, selectedGenre) {
                 <img src="./assets/img/steamLogo.svg" alt="steamLogo link" />
               </a>
             </nav>
+            </section>
           </article>
         `
     )

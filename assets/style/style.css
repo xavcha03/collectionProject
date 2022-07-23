@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nanum+Gothic+Coding:wght@400;700&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -45,9 +46,26 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  background: #373C5F;
+  font-family: 'Nanum Gothic Coding', monospace;
+  color: white; }
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  border: 1px solid black; }
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 29px;
+  font-weight: bold; }
+
 .badgesList {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 4px;
   margin: 16px 0; }
   .badgesList a {
@@ -61,7 +79,10 @@ table {
     font-weight: bold; }
 
 .header {
-  display: flex; }
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 0.5em; }
   .header__img {
     width: 100px; }
   .header__content h1 {
@@ -72,19 +93,37 @@ table {
 .cardsList {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px; }
+  gap: 16px;
+  justify-content: center;
+  padding: 0.5em; }
   .cardsList__card {
-    width: 350px; }
+    border-radius: 65px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #373c5f;
+    background: linear-gradient(147deg, #373c5f 0%, #7177a6 45%); }
+    @media screen and (min-width: 750px) {
+      .cardsList__card {
+        width: 350px; } }
     .cardsList__card__img {
       width: 100%; }
     .cardsList__card__genreList {
       flex-wrap: wrap; }
     .cardsList__card__title {
-      font-size: 1.3em;
+      font-size: 29px;
       font-weight: 700; }
-    .cardsList__card__developper {
-      color: gray; }
+    .cardsList__card__content {
+      margin: 0.5em; }
+    .cardsList__card__titleDescription {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1em;
+      color: #2FBCEC;
+      font-weight: bold; }
     .cardsList__card__p {
       line-height: 1.2em; }
+    .cardsList__card__socialLink {
+      text-align: center;
+      padding: 1em; }
 
 /*# sourceMappingURL=style.css.map */
