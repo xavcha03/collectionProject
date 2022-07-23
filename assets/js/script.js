@@ -91,14 +91,35 @@ const COLLECTION = [
     genre: ["VR", "Shooter", "Horror", "FPS", "Sci-fi", "Action"],
     description:
       "Terraformers is an expansive colony builder and resource management game with roguelike elements. Explore the Red Planet, develop spectacular cities, spread life and terraform the planet with ambitious projects.",
+    videoLink: "http:www.youtube.com/frzeljmfnezmlkfjezkm"  
   },
 ];
 
 //Variable de tri. Si elle est null, aucun tri n'est fait.
 let selectedGenre = null;
 
+//Création de la liste unique des genres
+let listGenre = [];
+COLLECTION.forEach((game) => {
+  game.genre.forEach((genre) => {
+    if (!listGenre.includes(genre)) listGenre.push(genre);
+  });
+});
+//Insertion des genres uniques dans le document
+let genreNavElt = document.querySelector("#genreList");
+genreNavElt.innerHTML = listGenre
+  .sort()
+  .map((genre) => {
+    return `<li class="badgesList__item"><a class="badgesList--badge" href="index.html?genre=${genre}">${genre}</a></li>`;
+  })
+  .join("");
+
 //Rendu initial
 gameListRender(COLLECTION, selectedGenre);
+
+//
+// Fonctions
+//
 
 //Affiche la liste des jeux d'une collection en fonction de son genre
 function gameListRender(collection, selectedGenre) {
@@ -122,7 +143,7 @@ function gameListRender(collection, selectedGenre) {
                 //.slice(0, 5)    //Possibilité de limiter la quantité de genre de jeu à afficher
                 .map(
                   (genre) =>
-                    `<li class="badgesList__item"><a href="#">${genre}</a></li>`
+                    `<li class="badgesList__item"><a class="badgesList--badge" href="#">${genre}</a></li>`
                 )
                 .join("")}
             </ul>
@@ -147,12 +168,11 @@ function gameListRender(collection, selectedGenre) {
         `
     )
     .join("");
-//Fin de map
-
+  //Fin de map
 
   //Ajout d'un event à chaque genre
 
-  let genresElt = document.querySelectorAll(".cardsList__card__genreList a"); //Selection du container
+  let genresElt = document.querySelectorAll(".badgesList--badge"); //Selection du container
   genresElt.forEach((genre) => {
     //ajout d'un event sur tous les genres
     genre.addEventListener("click", function (e) {
