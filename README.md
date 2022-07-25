@@ -1,8 +1,46 @@
 # Consolidation du DOM
 
+## Challenge
+
+L'objectif de ce projet est de résumer les connaissances actuelles sur :
+
+- HTML & CSS
+- Responsive design
+- Base de JS
+- Le DOM
+
+## La collection
+
+Pour ce projet je choisi de faire une liste de jeux vidéos.
+
+Chaque jeux est un objet.
+
+```
+{
+  title : "",
+  developper : "",
+  releaseDate : 2000,
+  picture : "",
+  genre : ["genre-1", "genre-2", ...],
+  description : "",
+  socialLink : [
+    {network : "", url:""}
+  ]
+}
+```
+
+Chaque objets sont placé dans un Array
+
 ## Phase 1 : Phase d'analyse
 
-Theme choisi : Jeux vidéos
+The goal of this project will be to summarize our current knowledge of :
+
+- HTML and CSS
+- Responsive design
+- Javascript Basics
+- The DOM
+
+to create a collection of items. This project will be split up in two parts.
 
 ## Phase 2 : Création de l'espace de travail (html, css, scss, js, img)
 
@@ -10,18 +48,11 @@ Theme choisi : Jeux vidéos
 
 ## Phase 3 : Structure HTML de base + css
 
-## Phase 4 : Afficher la liste de la collection de jeu
+## Phase 4 : Afficher la collection de jeu
 
 ## phase 5 : Possibilité de choisir un seul genre
 
-- Bug de performance à résoudre.
-
 ## Phase 6 : lister les genres (unique) todo
-
-- Création d'une nouvelle liste de genre. Chaque genre n'est repris qu'une seule fois. => ok
-- La liste est afficher en haut des la liste des jeux => ok
-- Ajout de la fonctionnalité de tris sur ces badges => ok
-- Possibilité de reset le choix => ToDo
 
 ## Phase 7 : Réalisation du css
 
@@ -37,6 +68,6 @@ Theme choisi : Jeux vidéos
   - Faire un slider d'image
   - Ajouter des vidéos lecture auto au survol sans son
 
-## Bugs - A Corriger
+```
 
-- Après plusieurs tri par genre, le changement est de plus en plus long => Comprendre PQ et corriger.
+```

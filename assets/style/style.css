@@ -116,7 +116,8 @@ h1 {
     .cardsList__card__img {
       width: 100%; }
     .cardsList__card__genreList {
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      margin-top: -20px; }
     .cardsList__card__title {
       font-size: 29px;
       font-weight: 700; }
