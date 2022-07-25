@@ -77,6 +77,10 @@ h1 {
     color: white;
     text-decoration: none;
     font-weight: bold; }
+    @media screen and (min-width: 750px) {
+      .badgesList a:hover {
+        transform: scale(110%);
+        transition: 1s; } }
 
 .header {
   display: flex;
@@ -101,10 +105,14 @@ h1 {
     overflow: hidden;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background: #373c5f;
-    background: linear-gradient(147deg, #373c5f 0%, #7177a6 45%); }
+    background: linear-gradient(147deg, #373c5f 0%, #7177a6 45%);
+    transition: transform 1s; }
     @media screen and (min-width: 750px) {
       .cardsList__card {
-        width: 350px; } }
+        width: 350px; }
+        .cardsList__card:hover {
+          transform: scale(105%);
+          transition: 1s; } }
     .cardsList__card__img {
       width: 100%; }
     .cardsList__card__genreList {

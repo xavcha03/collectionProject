@@ -24,9 +24,15 @@
         background: rgb(55,60,95);
         background: linear-gradient(147deg, rgba(55,60,95,1) 0%, rgba(113,119,166,1) 45%);
 
+        transition: transform 1s;
 
         @include media-desktop-only{
             width: 350px;
+
+            &:hover{
+                transform: scale(105%);
+                transition: 1s;
+            }
         }
 
 

@@ -11,6 +11,11 @@ const COLLECTION = [
     genre: ["Strategy", "RTS", "Multiplayer", "Base Building", "Sci-fi"],
     description:
       "Halo Wars: Definitive Edition is an enhanced version of the real-time strategy classic, Halo Wars, updated to run natively on PC. Halo Wars: Definitive Edition includes improved graphics, new achievements and all of the DLC created for the landmark real-time strategy game. ",
+    socialLink: [
+      { network: "youtube", url: "http://youtube.com" },
+      { network: "twitter", url: "http://twitter.com" },
+      { network: "steam", url: "http://steam.com" },
+    ],
   },
   {
     title: "Terraformers",
@@ -21,6 +26,10 @@ const COLLECTION = [
     genre: ["City Builder", "Base Building", "Base Building"],
     description:
       "Terraformers is an expansive colony builder and resource management game with roguelike elements. Explore the Red Planet, develop spectacular cities, spread life and terraform the planet with ambitious projects.",
+    socialLink: [
+      { network: "youtube", url: "http://youtube.com" },
+      { network: "twitter", url: "http://youtube.com" },
+    ],
   },
   {
     title: "SuperHot Vr",
@@ -31,6 +40,10 @@ const COLLECTION = [
     genre: ["VR", "Shooter", "Bullet Time", "Puzzle", "FPS", "Sci-fi"],
     description:
       "Terraformers is an expansive colony builder and resource management game with roguelike elements. Explore the Red Planet, develop spectacular cities, spread life and terraform the planet with ambitious projects.",
+    socialLink: [
+      { network: "youtube", url: "http://youtube.com" },
+      { network: "instagram", url: "http://youtube.com" },
+    ],
   },
   {
     title: "Half-Life Alyx",
@@ -41,57 +54,96 @@ const COLLECTION = [
     genre: ["VR", "Shooter", "Horror", "FPS", "Sci-fi", "Action"],
     description:
       "Terraformers is an expansive colony builder and resource management game with roguelike elements. Explore the Red Planet, develop spectacular cities, spread life and terraform the planet with ambitious projects.",
+
+    socialLink: [
+      { network: "youtube", url: "http://youtube.com" },
+      { network: "twitter", url: "http://youtube.com" },
+      { network: "instagram", url: "http://youtube.com" },
+    ],
   },
   {
-    title: "Half-Life Alyx",
-    developer: "Valve",
-    releaseDate: 2020,
+    title: "Hardspace: Shipbreaker",
+    developer: "Blackbird Interactive",
+    releaseDate: 2022,
     picture:
-      "https://cdn.akamai.steamstatic.com/steam/apps/546560/header.jpg?t=1641577012",
-    genre: ["VR", "Shooter", "Horror", "FPS", "Sci-fi", "Action"],
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/1161580/header.jpg?t=1655278510",
+    genre: ["Espace", "Simulation", "solo", "Sci-fi"],
     description:
-      "Terraformers is an expansive colony builder and resource management game with roguelike elements. Explore the Red Planet, develop spectacular cities, spread life and terraform the planet with ambitious projects.",
+      "Équipé de votre scie-laser, découpez les épaves de vaisseaux spatiaux et récupérez les matériaux de valeur. Améliorez votre équipement, tentez des contrats plus lucratifs et remboursez votre dette d’un milliard de crédits à la LYNX Corp ! ",
+    socialLink: [
+      { network: "youtube", url: "http://youtube.com" },
+      { network: "twitter", url: "http://youtube.com" },
+      { network: "instagram", url: "http://youtube.com" },
+    ],
   },
   {
-    title: "Half-Life Alyx",
-    developer: "Valve",
-    releaseDate: 2020,
+    title: "Insurgency: Sandstorm",
+    developer: "New World Interactive",
+    releaseDate: 2018,
     picture:
-      "https://cdn.akamai.steamstatic.com/steam/apps/546560/header.jpg?t=1641577012",
-    genre: ["VR", "Shooter", "Horror", "FPS", "Sci-fi", "Action"],
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/581320/header.jpg?t=1657215131",
+    genre: ["Shooter", "Horror", "FPS", "Sci-fi", "Action"],
     description:
-      "Terraformers is an expansive colony builder and resource management game with roguelike elements. Explore the Red Planet, develop spectacular cities, spread life and terraform the planet with ambitious projects.",
+      "Insurgency: Sandstorm est un FPS qui mêle combats tactiques, travail d'équipe et accomplissement d'objectifs dans des face-à-face nerveux en multijoueur. Faites l'expérience de l’intensité des guerres modernes, où le skill et le travail d’équipe sont indispensables pour arracher la victoire.",
+    socialLink: [
+      { network: "youtube", url: "http://youtube.com" },
+      { network: "twitter", url: "http://youtube.com" },
+      { network: "instagram", url: "http://youtube.com" },
+    ],
   },
   {
-    title: "Half-Life Alyx",
-    developer: "Valve",
-    releaseDate: 2020,
+    title: "theHunter: Call of the Wild",
+    developer: "Expansive Worlds",
+    releaseDate: 2017,
     picture:
-      "https://cdn.akamai.steamstatic.com/steam/apps/546560/header.jpg?t=1641577012",
-    genre: ["VR", "Shooter", "Horror", "FPS", "Sci-fi", "Action"],
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/518790/header.jpg?t=1656406952",
+    genre: ["Chasse", "simulation", "coop", "survie", "aventure"],
     description:
-      "Terraformers is an expansive colony builder and resource management game with roguelike elements. Explore the Red Planet, develop spectacular cities, spread life and terraform the planet with ambitious projects.",
+      "Découvrez un jeu de chasse à l'atmosphère inégalée prenant place dans un monde ouvert réaliste à la beauté qui vous coupera le souffle. Plongez dans la campagne solo à l'ambiance captivante ou partagez cette ultime expérience de chasse avec des amis. ",
+    socialLink: [
+      { network: "youtube", url: "http://youtube.com" },
+      { network: "twitter", url: "http://youtube.com" },
+      { network: "instagram", url: "http://youtube.com" },
+    ],
   },
   {
-    title: "Half-Life Alyx",
-    developer: "Valve",
-    releaseDate: 2020,
+    title: "No Man's Sky",
+    developer: "Hello Games",
+    releaseDate: 2016,
     picture:
-      "https://cdn.akamai.steamstatic.com/steam/apps/546560/header.jpg?t=1641577012",
-    genre: ["VR", "Shooter", "Horror", "FPS", "Sci-fi", "Action"],
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/275850/header_alt_assets_12.jpg?t=1658387858",
+    genre: [
+      "survie",
+      "espace",
+      "solo",
+      "FPS",
+      "Sci-fi",
+      "Action",
+      "simulation",
+    ],
     description:
-      "Terraformers is an expansive colony builder and resource management game with roguelike elements. Explore the Red Planet, develop spectacular cities, spread life and terraform the planet with ambitious projects.",
+      "No Man's Sky est un jeu de science-fiction sur l'exploration et la survie dans un univers infini généré de manière dynamique.",
+    socialLink: [
+      { network: "youtube", url: "http://youtube.com" },
+      { network: "twitter", url: "http://youtube.com" },
+      { network: "instagram", url: "http://youtube.com" },
+    ],
   },
   {
-    title: "Half-Life Alyx",
-    developer: "Valve",
+    title: "Satisfactory",
+    developer: "Coffee Stain Studios",
     releaseDate: 2020,
     picture:
-      "Half-Life: Alyx is Valve’s VR return to the Half-Life series. It’s the story of an impossible fight against a vicious alien race known as the Combine, set between the events of Half-Life and Half-Life 2. Playing as Alyx Vance, you are humanity’s only chance for survival. ",
-    genre: ["VR", "Shooter", "Horror", "FPS", "Sci-fi", "Action"],
+      "https://cdn.cloudflare.steamstatic.com/steam/apps/526870/header.jpg?t=1657895195x",
+    genre: ["Sci-fi", "Action", "simulation"],
     description:
-      "Terraformers is an expansive colony builder and resource management game with roguelike elements. Explore the Red Planet, develop spectacular cities, spread life and terraform the planet with ambitious projects.",
+      "Satisfactory est un jeu de construction d’usines en vue à la première personne dans un monde ouvert avec une touche d’exploration et de combats. Jouez seul ou entre amis, explorez une planète inconnue, construisez des usines à plusieurs niveaux et des tapis roulants à l’infini !",
     videoLink: "http:www.youtube.com/frzeljmfnezmlkfjezkm",
+    socialLink: [
+      { network: "youtube", url: "http://youtube.com" },
+      { network: "twitter", url: "http://youtube.com" },
+      { network: "instagram", url: "http://youtube.com" },
+    ],
   },
 ];
 
@@ -107,12 +159,14 @@ COLLECTION.forEach((game) => {
 });
 //Insertion des genres uniques dans le document
 let genreNavElt = document.querySelector("#genreList");
-genreNavElt.innerHTML = listGenre
-  .sort()
-  .map((genre) => {
-    return `<li class="badgesList__item"><a class="badgesList--badge" href="index.html?genre=${genre}">${genre}</a></li>`;
-  })
-  .join("");
+genreNavElt.innerHTML =
+  genreNavElt.innerHTML +
+  listGenre
+    .sort()
+    .map((genre) => {
+      return `<li class="badgesList__item"><a class="badgesList--badge" href="index.html?genre=${genre}">${genre}</a></li>`;
+    })
+    .join("");
 
 //Rendu initial
 gameListRender(COLLECTION, selectedGenre);
@@ -155,15 +209,16 @@ function gameListRender(collection, selectedGenre) {
             </div>
             <p class="cardsList__card__description">${game.description}</p>
             <nav class="cardsList__card__socialLink">
-              <a href="#">
-                <img src="./assets/img/youtube.svg" alt="youtube link" />
-              </a>
-              <a href="#">
-                <img src="./assets/img/twitter.svg" alt="twitter link" />
-              </a>
-              <a href="#">
-                <img src="./assets/img/steamLogo.svg" alt="steamLogo link" />
-              </a>
+              ${game.socialLink
+                .map(
+                  (socialLink) =>
+                    `
+                  <a href="${socialLink.url}"><img src="./assets/img/${socialLink.network}.svg" alt="youtube link" /></a>
+                  `
+                )
+                .join("")}
+              
+              
             </nav>
             </section>
           </article>
@@ -180,6 +235,9 @@ function gameListRender(collection, selectedGenre) {
     genre.addEventListener("click", function (e) {
       e.preventDefault(); //Annulation de l'action par defaut
       selectedGenre = genre.innerHTML; //Récupération du nom du genre
+      if (selectedGenre == "reset") {
+        selectedGenre = null;
+      }
       gameListRender(COLLECTION, selectedGenre); //Mise à jour du rendu de la liste avec le genre sélectionné
     });
   });
